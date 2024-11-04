@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MCA Department - Graphic Era University</title>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Open Sans', sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
+        nav { background-color: #4CAF50; padding: 10px; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); display: flex; justify-content: space-between; align-items: center;margin-bottom: 10px; }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; margin: 0 5px; transition: background-color 0.3s; }
+        nav a:hover { background-color: #45a049; }
+        nav .logo { display: flex; align-items: center; }
+        nav .logo img { height: 50px; margin-right: 10px; } /* Increased logo size for better visibility */
+        marquee { font-family: 'Roboto', sans-serif; font-weight: 700; color: #333; margin-top: 80px; text-align: center; font-size: 2.5em; }
+        h2 { color: #4CAF50; margin-top: 40px; text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        .image-container {
+            position: relative;
+            text-align: center;
+            overflow: hidden; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        } 
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.5s ease; 
+        }
+        .image-container img:hover {
+            transform: scale(1.05); 
+        }
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)); 
+            border-radius: 12px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
+        }
+        .image-container:hover .image-overlay {
+            opacity: 1;
+        }
+        .image-text {
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+            letter-spacing: 2px; 
+            text-align: center; 
+        }
+        .cta-button { display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin: 20px auto; transition: background-color 0.3s; }
+        .cta-button:hover { background-color: #45a049; }
+        .testimonial { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin: 20px auto; max-width: 600px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        footer { margin-top: 20px; text-align: center; padding: 10px; background-color: #4CAF50; color: white; }
+    </style>
+</head>
+<body>
+
+    <nav >
+       <a href="#home"><div class="logo">
+            <img src="https://www.guidanceforever.org/wp-content/uploads/2023/10/graphic-era-university-dehradun-logo-1.png" alt="Graphic Era Hill University Logo" />
+            <span style="font-size: 1.5em; color: white;">Graphic Era Hill University</span>
+        </div>
+        </a>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#details">Details</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#login">Login</a>
+            <a href="./practical3.html">Sign Up</a>
+        </div>
+    </nav>
+    <br>
+
+    <marquee id="#home">Welcome to the Graphic Era Hill University. This Website is Made For Only Fun..</marquee>
+    <h2>Graphic Era Hill University</h2>
+    <center>
+        <div style="display: flex;justify-content: space-around;flex-wrap: wrap;">
+        <a href="./practicle2.html"><u><h1>PRACTICAL - I</h1></u></a>
+        <a href="./practicle.html"><u><h1>PRACTICAL - II</h1></u></a>
+        <a href="./practical3.html"><u><h1>PRACTICAL - III</h1></u></a>
+        <a href="./practical3.html"><u><h1>PRACTICAL - IV</h1></u></a>
+
+            </div>
+    </center>
+
+    <div class="image-container">
+        <img src="https://www.gehu.ac.in/assets/GEHU-Dehradun-1abd6f9c.jpg" alt="MCA Department" />
+        <div class="image-overlay">
+            <div class="image-text">Graphic Era Hill University</div>
+        </div>
+    </div>
+
+    <h2 id="details">Course Structure</h2>
+    <p>The Master of Computer Applications (MCA) program at Graphic Era University is designed to provide students with a comprehensive understanding of computer applications and software development.</p>
+    
+    <table>
+        <tr>
+            <th>Semester</th>
+            <th>Subjects</th>
+        </tr>
+        <tr>
+            <td>1st Semester</td>
+            <td>Mathematics, Computer Programming, Computer Organization</td>
+        </tr>
+        <tr>
+            <td>2nd Semester</td>
+            <td>Data Structures, Software Engineering, Database Management Systems</td>
+        </tr>
+        <tr>
+            <td>3rd Semester</td>
+            <td>Web Technologies, Operating Systems, Network Programming</td>
+        </tr>
+        <tr>
+            <td>4th Semester</td>
+            <td>Mobile Application Development, Cloud Computing, Project Management</td>
+        </tr>
+        <tr>
+            <td>5th Semester</td>
+            <td>Artificial Intelligence, Data Mining, Cyber Security</td>
+        </tr>
+        <tr>
+            <td>6th Semester</td>
+            <td>Major Project, Internship, Electives</td>
+        </tr>
+    </table>
+
+    <h2 id="about">About the MCA Program</h2>
+    <p>The MCA program is aimed at preparing professionals to meet the demands of the IT industry. Our curriculum is regularly updated to keep pace with the latest technological advancements.</p>
+    <p>The program focuses on both theoretical knowledge and practical skills, ensuring that students are well-equipped to tackle real-world challenges. Students engage in various projects, internships, and workshops that provide hands-on experience in software development, project management, and emerging technologies.</p>
+    <p>In addition to technical skills, the MCA program emphasizes the importance of soft skills, such as communication, teamwork, and problem-solving abilities, which are essential for success in the corporate environment. Our faculty comprises experienced professionals and academicians who are dedicated to mentoring students and guiding them throughout their academic journey.</p>
+    <p>Upon completion of the MCA program, graduates are well-prepared to pursue careers in software development, IT consultancy, system analysis, and many other fields within the technology sector.</p>
+
+    <h2 id="testimonials">What Our Students Say</h2>
+    <div class="testimonial">
+        <p>"The MCA program at Graphic Era University has been a life-changing experience for me. The faculty and staff are extremely supportive, and the curriculum is well-structured to prepare students for the industry."</p>
+        <p>- Sachin Kumar, MCA Student</p>
+    </div>
+    <div class="testimonial">
+        <p>"I'm grateful for the opportunities provided by the MCA program, which have helped me develop my skills and confidence. The program has been instrumental in shaping my career."</p>
+        <p>- Sachin, MCA Student</p>
+    </div>
+
+    <h2 id="login">Login</h2>
+    <p>If you are a student or faculty member, please <a href="login.html">login here</a> to access your account.</p>
+    <a href="login.html" class="cta-button">Login Now</a>
+
+    <footer>
+        <p>&copy; Graphic Era Hill University.</p>
+    </footer>
+
+</body>
+</html>
